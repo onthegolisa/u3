@@ -87,6 +87,10 @@ header{
     a, p{
         font-size: 2em;
     }
+
+    ol li {
+        font-size: 2em;
+    }
     /* #sub-menu a{
         font-size: 2em;
     }
