@@ -25,6 +25,7 @@ html{
     
 }
 
+
 body{
     margin: 0 auto;
     padding: 0;
@@ -36,6 +37,20 @@ body{
    "picture main . local-nav"
    "picture main . local-nav"
    "picture footer footer footer";
+}
+
+@media(max-width:1233px){
+    body{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+       "logo logo logo logo"
+       "global-nav global-nav global-nav global-nav"
+       "local-nav local-nav local-nav local-nav"
+       "main main main main"
+       "footer footer footer footer"
+       "picture picture picture picture";
+    }
 }
 
 
@@ -70,6 +85,14 @@ main{
 footer{
     grid-area:footer;
     display:flex;
+    flex-direction: row;
+}
+
+@media(max-width:1233px){
+    footer{
+        display:flex;
+        flex-direction: column;
+    }
 }
 
 footer section{
