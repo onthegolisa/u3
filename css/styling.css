@@ -78,6 +78,22 @@ header{
     flex-direction: column;
 }
 
+@media(max-width:500px){
+
+    body{
+        font-size:24px;
+    }
+
+    /* #sub-menu a{
+        font-size: 2em;
+    }
+
+    #main-menu{
+        font-size: 4em;
+    } */
+}
+
+
 main{
     grid-area:main;
 }
@@ -123,6 +139,8 @@ a{
     font-weight: 900;
 }
 
+
+
 .text-link{
     margin:0;
 }
@@ -141,10 +159,6 @@ a:hover{
     border-radius:30px;
     border-width: thin;
     border-style: solid;
-}
-
-h1, h2 {
-    
 }
 
 img {
