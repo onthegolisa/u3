@@ -1,18 +1,139 @@
+/*
+    Colors on the website:
+
+    Text
+    Soft gray: #b4aba2;
+    darker gray: #444;
+
+    Links
+    Apple green: #94c11a;
+    deep green: #013220;
+
+    Details, pop out.
+    dark orange: #FF8C00;
+    darkest oragen: #cc7000;
+    light blue:#add8e6;
+*/
+
+/*CLEANUP*/
+
 @charset "utf-8";
 
 html{
     font-size:16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
 }
 
 body{
     margin: 0 auto;
     padding: 0;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+   "logo global-nav global-nav global-nav"
+   "picture main . local-nav"
+   "picture main . local-nav"
+   "picture footer footer footer";
+}
+
+
+header{
+    grid-area:logo;
+}
+
+
+
+#pictures{
+    grid-area:picture;
+}
+
+#pictures img{
+    max-width:400px;
+}
+
+#main-menu{
+    grid-area:global-nav;
+}
+
+#sub-menu{
+    grid-area:local-nav;
+    display:flex;
+    flex-direction: column;
+}
+
+main{
+    grid-area:main;
+}
+
+footer{
+    grid-area:footer;
+    display:flex;
+}
+
+footer section{
+    margin-right:4em;
+}
+
+
+header, nav, main, footer{
+    margin: 1em;
 }
 
 ul, nav{
     list-style: none;
 }
 
+/*CLEANUP DONE*/
+
+nav li{
+    display:inline-block;
+    text-transform: uppercase;
+}
+
 a{
     text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-right: 1em;
+    font-weight: 900;
+}
+
+.text-link{
+    margin:0;
+}
+
+a:hover{
+    
+}
+
+.top-menu{
+    font-size: 2em;
+}
+
+.booking-btn{
+    padding: 1em;
+    text-decoration:none;
+    border-radius:30px;
+    border-width: thin;
+    border-style: solid;
+}
+
+h1, h2 {
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#logo{
+    
+    font-size:3em;
+}
+
+footer ul{
+    list-style: circle;
 }
