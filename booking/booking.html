@@ -11,7 +11,6 @@
     <header>
         <h1 id="logo"><sup>Tiny</sup>SPA</h1>
     </header>
-    <div id="pictures"><img src="/img/gray.JPG"><img src="/img/gray.JPG"><img src="/img/gray.jpg"></div>
     <nav id="main-menu">
         <li><a class="top-menu" href="../index.html">Start</a></li>
         <li><a class="top-menu" href="treatments.html">Behandlingsmeny</a></li>
@@ -24,7 +23,8 @@
         <h1>Unna dig själv</h1>
         <form>
             <h2>Bokning av weekendpaket</h2>
-            <input type="checkbox"> Jag vill boka ett weekendpaket.
+            <p>Om du inte vill boka ett weekendpaket, lämna då bara allt tomt.</p>
+            Checkin: <input type="date" id="date-booking">
             <br>
             <p>Välj paket</p>
             <select name="weekend-packages" id="weekend-packages">
@@ -34,11 +34,12 @@
                 <option value="3">Klassik weekend</option>
             </select>
             <br>
-           Checkin: <input type="date" id="date-booking">
-            
-            <p>Om du inte vill boka en behandling med ditt spapaket, då kan du bara lämna tomt nedan.</p>
-        
+           
+ 
             <h2>Bokning av SPA behandling</h2>
+            <p>Om du inte vill boka en behandling, då kan du bara lämna tomt nedan.</p>
+            Tid för bokning: <input type="date" id="date-booking">
+            <br>
             <label for="treatments">Välj en behandling</label>
             <select name="treatments" id="treatments">
                 <option value="0"></option>
@@ -46,9 +47,11 @@
                 <option value="2">Massage</option>
                 <option value="3">Lerinpackning</option>
             </select>
+            <br>
+            <br>
             <input type="checkbox">Extra blästring
             <br>
-            <p>Önska en behandlare. Lämna tomt om inget önskemål finns.</p>
+            <p>Välj behandlare</p>
             <select name="care-givers" id="care-givers">
                 <option value="0"></option>
                 <option value="1">Tiny</option>
@@ -56,9 +59,7 @@
                 <option value="3">Tinys hund</option>
                 <option value="4">Köksbiträdet (hen med de hårda nyporna)</option>
             </select>
-            <br>
-            <input type="date" id="date-booking">
-            <a class="booking-btn" href="booking.html">Boka</a>
+            <div class="booking-box"><a class="booking-btn" href="booking.html">Boka</a></div>
         </form>
         
     </main>

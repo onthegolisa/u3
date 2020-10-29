@@ -36,10 +36,10 @@ body{
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-   "logo global-nav global-nav global-nav"
-   "picture main . local-nav"
-   "picture main . local-nav"
-   "picture footer footer footer";
+   "logo local-nav local-nav local-nav"
+   "global-nav main . ."
+   "global-nav picture picture ."
+   "global-nav footer footer footer";
 }
 
 @media(max-width:1233px){
@@ -59,35 +59,59 @@ body{
 
 header{
     grid-area:logo;
+    background-color: #23282d;
 }
 
 
 
 #pictures{
     grid-area:picture;
+    display:flex;
+    flex-direction: row;
 }
 
 #pictures img{
     max-width:400px;
+    margin:2em;
 }
 
 #main-menu{
     grid-area:global-nav;
+        display:flex;
+    flex-direction: column;
+    background-color: #23282d;
 }
 
 #sub-menu{
     grid-area:local-nav;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-end;
 }
-
 
 @media(max-width:1233px){
-    html{
-        font-size:36px;
+    #sub-menu{
+        flex-direction: column;
+        align-items:flex-start;
     }
+
+
+    
 }
 
+@media(max-width:1233px){
+    #main-menu a{
+        font-size: 3em;
+    }
+    #sub-menu a{
+        font-size: 2em;
+    }
+
+    ul li, h2, h3, p{
+        font-size: 2em;
+    }
+    
+}
 
 main{
     grid-area:main;
@@ -112,7 +136,7 @@ footer section{
 
 
 header, nav, main, footer{
-    margin: 1em;
+    padding: 1em;
 }
 
 ul, nav{
@@ -142,11 +166,14 @@ a{
 }
 
 a:hover{
-    color:#013220;
+    color:#add8e6;
 }
 
 .top-menu{
     font-size: 2em;
+}
+.booking-box{
+    margin-top:2em;
 }
 
 .booking-btn{
