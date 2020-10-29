@@ -22,9 +22,12 @@
 html{
     font-size:16px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    
+    color:#444;
 }
 
+h1,h2,h3{
+    color:#b4aba2;
+}
 
 body{
     margin: 0 auto;
@@ -78,26 +81,11 @@ header{
     flex-direction: column;
 }
 
-@media(max-width:500px){
 
-    body{
-        font-size:24px;
+@media(max-width:1233px){
+    html{
+        font-size:36px;
     }
-
-    a, p{
-        font-size: 2em;
-    }
-
-    ol li {
-        font-size: 2em;
-    }
-    /* #sub-menu a{
-        font-size: 2em;
-    }
-
-    #main-menu{
-        font-size: 4em;
-    } */
 }
 
 
@@ -111,7 +99,7 @@ footer{
     flex-direction: row;
 }
 
-@media(max-width:1233px){
+@media(max-width:700px){
     footer{
         display:flex;
         flex-direction: column;
@@ -144,6 +132,7 @@ a{
     text-decoration: underline;
     margin-right: 1em;
     font-weight: 900;
+    color:#94c11a;
 }
 
 
@@ -153,7 +142,7 @@ a{
 }
 
 a:hover{
-    
+    color:#013220;
 }
 
 .top-menu{
@@ -174,7 +163,7 @@ img {
 }
 
 #logo{
-    
+    color:#FF8C00;;
     font-size:3em;
 }
 
