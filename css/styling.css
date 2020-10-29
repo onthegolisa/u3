@@ -90,16 +90,6 @@ header{
 }
 
 @media(max-width:1233px){
-    #sub-menu{
-        flex-direction: column;
-        align-items:flex-start;
-    }
-
-
-    
-}
-
-@media(max-width:1233px){
     #main-menu a{
         font-size: 3em;
     }
@@ -110,7 +100,10 @@ header{
     ul li, h2, h3, p{
         font-size: 2em;
     }
-    
+    #sub-menu{
+        flex-direction: column;
+        align-items:flex-start;
+    }
 }
 
 main{
