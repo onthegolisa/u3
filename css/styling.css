@@ -72,12 +72,13 @@ header{
 
 #pictures img{
     max-width:400px;
+    width:100%;
     margin:2em;
 }
 
 #main-menu{
     grid-area:global-nav;
-        display:flex;
+    display:flex;
     flex-direction: column;
     background-color: #23282d;
 }
@@ -89,22 +90,6 @@ header{
     align-items: flex-end;
 }
 
-@media(max-width:1233px){
-    #main-menu a{
-        font-size: 3em;
-    }
-    #sub-menu a{
-        font-size: 2em;
-    }
-
-    ul li, h2, h3, p{
-        font-size: 2em;
-    }
-    #sub-menu{
-        flex-direction: column;
-        align-items:flex-start;
-    }
-}
 
 main{
     grid-area:main;
@@ -116,12 +101,6 @@ footer{
     flex-direction: row;
 }
 
-@media(max-width:700px){
-    footer{
-        display:flex;
-        flex-direction: column;
-    }
-}
 
 footer section{
     margin-right:4em;
@@ -189,4 +168,35 @@ img {
 
 footer ul{
     list-style: circle;
+}
+
+
+@media(max-width:1233px){
+    #main-menu a{
+        font-size: 3em;
+    }
+    #sub-menu a{
+        font-size: 2em;
+    }
+
+    ul li, h2, h3, p{
+        font-size: 2em;
+    }
+    #sub-menu{
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    footer{
+        display:flex;
+        flex-direction: column;
+    }
+
+}
+@media(max-width:900px){
+
+    #pictures{
+        grid-area:picture;
+        display:flex;
+        flex-direction: column;
+    }
 }
