@@ -158,25 +158,19 @@ footer ul{
     #main-menu a{
         font-size: 3em;
     }
-    #sub-menu a{
-        font-size: 2em;
-    }
 
-    ul li, h2, h3, p{
+    ul li, h2, h3, p, input, select, span,#sub-menu a{
         font-size: 2em;
     }
     #sub-menu{
         flex-direction: column;
         align-items:flex-start;
     }
+
     footer{
         display:flex;
         flex-direction: column;
     }
-    input, select, span{
-        font-size: 2em;
-    }
-
     input[type=radio]{
         height:1em;
         width:1em;
