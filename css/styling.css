@@ -173,8 +173,13 @@ footer ul{
         display:flex;
         flex-direction: column;
     }
-    input, select{
+    input, select, span{
         font-size: 2em;
+    }
+
+    input[type=radio]{
+        height:1em;
+        width:1em;
     }
 
 }
