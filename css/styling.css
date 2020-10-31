@@ -6,10 +6,6 @@ html{
     color:#444;
 }
 
-h1,h2,h3{
-    color:#b4aba2;
-}
-
 body{
     margin: 0 auto;
     padding: 0;
@@ -23,27 +19,18 @@ body{
    "global-nav footer footer footer";
 }
 
-@media(max-width:1233px){
-    body{
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-       "logo logo logo logo"
-       "global-nav global-nav global-nav global-nav"
-       "local-nav local-nav local-nav local-nav"
-       "main main main main"
-       "picture picture picture picture"
-       "footer footer footer footer";
-    }
+header, nav, main, footer{
+    padding: 1em;
 }
-
 
 header{
     grid-area:logo;
     background-color: #23282d;
 }
 
-
+h1,h2,h3{
+    color:#b4aba2;
+}
 
 #pictures{
     grid-area:picture;
@@ -57,6 +44,11 @@ header{
     margin: 1em;
     border-radius: 5px;
     border-style: solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 #main-menu{
@@ -84,14 +76,12 @@ footer{
     flex-direction: row;
 }
 
-
 footer section{
     margin-right:4em;
 }
 
-
-header, nav, main, footer{
-    padding: 1em;
+footer ul{
+    list-style: circle;
 }
 
 ul, nav{
@@ -103,7 +93,7 @@ nav li{
     text-transform: uppercase;
 }
 
-a{
+a {
     text-decoration: none;
     text-transform: uppercase;
     text-decoration: underline;
@@ -112,19 +102,18 @@ a{
     color:#94c11a;
 }
 
-
-
-.text-link{
-    margin:0;
-}
-
 a:hover{
     color:#add8e6;
 }
 
 .top-menu{
-    font-size: 2em;
+    font-size : 2em;
 }
+
+.text-link{
+    margin:0;
+}
+
 .booking-box{
     margin-top:2em;
 }
@@ -137,22 +126,27 @@ a:hover{
     border-style: solid;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 #logo{
     color:#FF8C00;;
     font-size:3em;
 }
 
-footer ul{
-    list-style: circle;
-}
 
 
 @media(max-width:1233px){
+
+    body{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+       "logo logo logo logo"
+       "global-nav global-nav global-nav global-nav"
+       "local-nav local-nav local-nav local-nav"
+       "main main main main"
+       "picture picture picture picture"
+       "footer footer footer footer";
+    }
+
     #main-menu a{
         font-size: 3em;
     }
